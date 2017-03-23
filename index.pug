@@ -1,0 +1,149 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    title= 'id Software programming principles by John Romero'
+    meta(name='description' content='Programming principles used for game development at id Software (by John Romero) - made with ❤ by Tom Lutzenberger')
+    meta(name='robots' content='index,follow,noodp')
+
+    meta(property='og:url' content='https://tomlutzenberger.github.io/id-software-programming-principles/')
+    meta(property='og:type' content='website')
+    meta(property='og:title' content='id Software programming principles by John Romero')
+    meta(property='og:image' content='https://tomlutzenberger.github.io/id-software-programming-principles/assets/banner.png')
+    meta(property='og:description' content='Programming principles used for game development at id Software (by John Romero) - made with ❤ by Tom Lutzenberger')
+    meta(property='og:site_name' content='id Software programming principles by John Romero')
+    meta(property='og:locale' content='en_US')
+
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ' crossorigin='anonymous')
+    //link(href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet')
+    noscript
+      link(href='https://use.fontawesome.com/7f6ce9e346.css' rel='stylesheet')
+
+
+    style
+      != 'body { padding-top: 50px; }'
+      != 'hr { margin-bottom: 40px; margin-top: 40px; }'
+      != 'blockquote { quotes: "“" "”" "‘" "’"; }'
+      != 'blockquote q:before { content: open-quote; }'
+      != 'blockquote q:after { content: close-quote; }'
+      != 'footer { padding: 10px 0; }'
+      != '.btn-facebook { background: #3b5998; border: 1px solid #3b5998; color: #fff; }'
+      != '.btn-facebook:hover, .btn-facebook:active, .btn-facebook:focus { background: #fff; color: #3b5998; }'
+      != '.btn-twitter { background: #1da1f2; border: 1px solid #1da1f2; color: #fff; }'
+      != '.btn-twitter:hover, .btn-twitter:active, .btn-twitter:focus { background: #fff; color: #1da1f2; }'
+      != '.btn-github { background: #333; border: 1px solid #333; color: #fff; }'
+      != '.btn-github:hover, .btn-github:active, .btn-github:focus { background: #fff; color: #333; }'
+  body
+
+    .container(role='main')
+      .row
+        .col.col-12
+          .text-center
+            h1 id Software programming principles
+              br
+              small by John Romero
+            p
+              != 'The following advices were taken from the 2016 GDC Europe talk of id Software co-founder and Doom co-creator John Romero.'
+              br
+              != 'They might be useful in more fields than just game development.'
+
+
+      .row
+        .col-5.offset-sm-1
+          .card.card-inverse.card-primary.mb-3.text-center
+            .card-block
+              blockquote.card-blockquote
+                q No prototypes. Just make the game. Polish as you go. Don't depend on polish happening later. Always maintain constantly shippable code.
+
+        .col-5
+          .card.card-inverse.card-primary.mb-3.text-center
+            .card-block
+              blockquote.card-blockquote
+                q It's incredibly important that your game can always be run by your team. Bulletproof your engine by providing defaults upon load failure.
+
+      .row
+        .col-5.offset-sm-1
+          .card.card-inverse.card-primary.mb-3.text-center
+            .card-block
+              blockquote.card-blockquote
+                q Keep your code absolutely simple. Keep looking at your functions and figure out how you can simplify further.
+
+        .col-5
+          .card.card-inverse.card-primary.mb-3.text-center
+            .card-block
+              blockquote.card-blockquote
+                q Great tools help make great games. Spend as much time on tools as possible.
+
+      .row
+        .col-5.offset-sm-1
+          .card.card-inverse.card-primary.mb-3.text-center
+            .card-block
+              blockquote.card-blockquote
+                q We are our own best testing team and should never allow anyone else to experience bugs or see the game crash. Don't waste others' time. Test thoroughly before checking in your code.
+
+        .col-5
+          .card.card-inverse.card-primary.mb-3.text-center
+            .card-block
+              blockquote.card-blockquote
+                q As soon as you see a bug, you fix it. Do not continue on. If you don't fix your bugs your new code will be built on a buggy codebase and ensure an unstable foundation.
+
+      .row
+        .col-5.offset-sm-1
+          .card.card-inverse.card-primary.mb-3.text-center
+            .card-block
+              blockquote.card-blockquote
+                q Write your code for this game only - not for a future game. You're going to be writing new code later because you'll be smarter.
+
+        .col-5
+          .card.card-inverse.card-primary.mb-3.text-center
+            .card-block
+              blockquote.card-blockquote
+                q Encapsulate functionality to ensure design consistency. This minimizes mistakes and saves design time.
+
+      .row
+        .col-5.offset-sm-1
+          .card.card-inverse.card-primary.mb-3.text-center
+            .card-block
+              blockquote.card-blockquote
+                q Try to code transparently. Tell your lead and peers exactly how you are going to solve your current task and get feedback and advice. Do not treat game programming like each coder is a bloack box. The project could go off the rails and cause delays.
+
+        .col-5
+          .card.card-inverse.card-primary.mb-3.text-center
+            .card-block
+              blockquote.card-blockquote
+                q Programming is a creative art form based in logic. Every programmer is different and will code differently. It's the output that matters.
+
+      .row
+        .col-10.offset-sm-1.text-center
+          h2 Watch the full video
+          iframe(width="640" height="360" src="https://www.youtube.com/embed/E2MIpi8pIvY" frameborder="0" allowfullscreen)
+
+    .container
+      .row
+        .col
+          hr
+          footer.text-center
+            p
+              a.btn.btn-sm.btn-facebook(href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftomlutzenberger.github.io%2Fid-software-programming-principles%2F' target='_blank')
+                i.fa.fa-fw.fa-lg.fa-facebook
+                != '&nbsp;Share'
+
+              != '&nbsp;'
+
+              a.btn.btn-sm.btn-twitter(href='https://twitter.com/share?text=id%20Software%20programming%20principles%20by%20@romero&url=https%3A%2F%2Ftomlutzenberger.github.io%2Fid-software-programming-principles%2F&via=t0mlutzenberger&hashtags=programming%2Cprinciples%2Cgamedevelopment' target='_blank')
+                i.fa.fa-fw.fa-lg.fa-twitter
+                != '&nbsp;Tweet'
+
+              != '&nbsp;'
+
+              a.btn.btn-sm.btn-github(href='https://github.com/tomlutzenberger/id-software-programming-principles' title='Contribute on GitHub' target='_blank')
+                i.fa.fa-fw.fa-lg.fa-github
+                != '&nbsp;Contribute'
+
+            p
+              != '2017 by Tom Lutzenberger'
+
+    script(src='https://use.fontawesome.com/7f6ce9e346.js')

@@ -1,0 +1,30 @@
+{
+  "name": "id-software-programming-principles",
+  "version": "1.0.0",
+  "description": "Programming principles used for game development at id Software (by John Romero)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomlutzenberger/id-software-programming-principles.git"
+  },
+  "keywords": [
+    "programming",
+    "principles",
+    "game development"
+  ],
+  "author": "Tom Lutzenberger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomlutzenberger/id-software-programming-principles/issues"
+  },
+  "homepage": "https://tomlutzenberger.github.io/id-software-programming-principles/",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
