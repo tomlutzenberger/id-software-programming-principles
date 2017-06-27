@@ -24,11 +24,16 @@ html(lang='en')
 
 
     style
-      != 'body { padding-top: 50px; }'
+      != 'body { background: #000; color: #c02d00; padding-top: 30px; }'
+      != 'img { margin-bottom: 30px; }'
+      != 'h1, .h1 { margin-bottom: 2rem; }'
+      != '.lead { margin-bottom: 2rem; }'
       != 'hr { margin-bottom: 40px; margin-top: 40px; }'
+      != '.card-primary { background-color: #c02d00; border-color: #c02d00; }'
       != 'blockquote { quotes: "“" "”" "‘" "’"; }'
       != 'blockquote q:before { content: open-quote; }'
       != 'blockquote q:after { content: close-quote; }'
+      != '.video-wrap { margin-top: 2rem; margin-bottom: 2rem; }'
       != 'footer { padding: 10px 0; }'
       != '.btn-facebook { background: #3b5998; border: 1px solid #3b5998; color: #fff; }'
       != '.btn-facebook:hover, .btn-facebook:active, .btn-facebook:focus { background: #fff; color: #3b5998; }'
@@ -40,86 +45,88 @@ html(lang='en')
 
     .container(role='main')
       .row
-        .col.col-12
+        .col.col-12.col-md-8.offset-md-2
           .text-center
-            h1 id Software programming principles
+            img(src="./logo.png" class="img-responsive" alt="id Software Logo")
+            h1 id Software Programming Principles
               br
               small by John Romero
-            p
+            p.lead
               != 'The following advices were taken from the 2016 GDC Europe talk of id Software co-founder and Doom co-creator John Romero.'
               br
               != 'They might be useful in more fields than just game development.'
 
 
       .row
-        .col-5.offset-sm-1
+        .col.col-12.col-sm-6.col-md-5.offset-md-1
           .card.card-inverse.card-primary.mb-3.text-center
             .card-block
               blockquote.card-blockquote
                 q No prototypes. Just make the game. Polish as you go. Don't depend on polish happening later. Always maintain constantly shippable code.
 
-        .col-5
+        .col.col-12.col-sm-6.col-md-5
           .card.card-inverse.card-primary.mb-3.text-center
             .card-block
               blockquote.card-blockquote
                 q It's incredibly important that your game can always be run by your team. Bulletproof your engine by providing defaults upon load failure.
 
       .row
-        .col-5.offset-sm-1
+        .col.col-12.col-sm-6.col-md-5.offset-md-1
           .card.card-inverse.card-primary.mb-3.text-center
             .card-block
               blockquote.card-blockquote
                 q Keep your code absolutely simple. Keep looking at your functions and figure out how you can simplify further.
 
-        .col-5
+        .col.col-12.col-sm-6.col-md-5
           .card.card-inverse.card-primary.mb-3.text-center
             .card-block
               blockquote.card-blockquote
                 q Great tools help make great games. Spend as much time on tools as possible.
 
       .row
-        .col-5.offset-sm-1
+        .col.col-12.col-sm-6.col-md-5.offset-md-1
           .card.card-inverse.card-primary.mb-3.text-center
             .card-block
               blockquote.card-blockquote
                 q We are our own best testing team and should never allow anyone else to experience bugs or see the game crash. Don't waste others' time. Test thoroughly before checking in your code.
 
-        .col-5
+        .col.col-12.col-sm-6.col-md-5
           .card.card-inverse.card-primary.mb-3.text-center
             .card-block
               blockquote.card-blockquote
                 q As soon as you see a bug, you fix it. Do not continue on. If you don't fix your bugs your new code will be built on a buggy codebase and ensure an unstable foundation.
 
       .row
-        .col-5.offset-sm-1
+        .col.col-12.col-sm-6.col-md-5.offset-md-1
           .card.card-inverse.card-primary.mb-3.text-center
             .card-block
               blockquote.card-blockquote
                 q Write your code for this game only - not for a future game. You're going to be writing new code later because you'll be smarter.
 
-        .col-5
+        .col.col-12.col-sm-6.col-md-5
           .card.card-inverse.card-primary.mb-3.text-center
             .card-block
               blockquote.card-blockquote
                 q Encapsulate functionality to ensure design consistency. This minimizes mistakes and saves design time.
 
       .row
-        .col-5.offset-sm-1
+        .col.col-12.col-sm-6.col-md-5.offset-md-1
           .card.card-inverse.card-primary.mb-3.text-center
             .card-block
               blockquote.card-blockquote
                 q Try to code transparently. Tell your lead and peers exactly how you are going to solve your current task and get feedback and advice. Do not treat game programming like each coder is a black box. The project could go off the rails and cause delays.
 
-        .col-5
+        .col.col-12.col-sm-6.col-md-5
           .card.card-inverse.card-primary.mb-3.text-center
             .card-block
               blockquote.card-blockquote
                 q Programming is a creative art form based in logic. Every programmer is different and will code differently. It's the output that matters.
 
       .row
-        .col-10.offset-sm-1.text-center
+        .col.col-12.col-md-10.offset-md-1.text-center.video-wrap
           h2 Watch the full video
-          iframe(width="640" height="360" src="https://www.youtube.com/embed/E2MIpi8pIvY" frameborder="0" allowfullscreen)
+          .embed-responsive.embed-responsive-16by9
+            iframe(width="640" height="360" src="https://www.youtube.com/embed/E2MIpi8pIvY" class="embed-responsive-item" frameborder="0" allowfullscreen)
 
     .container
       .row
